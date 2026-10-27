@@ -1,0 +1,6 @@
+Write-Host "--- INFORMACION DE POWERSHELL Y SISTEMA ---" -ForegroundColor Cyan
+Write-Host "1. Version de PowerShell:" -NoNewline; $PSVersionTable.PSVersion
+Write-Host "2. Configuracion de Permisividad:" -NoNewline; Get-ExecutionPolicy
+Write-Host "3. Edicion del Sistema Operativo:" -NoNewline; (Get-CimInstance Win32_OperatingSystem).Caption
+Write-Host "--- INFORMACION COMPLETA (CMD) ---" -ForegroundColor Cyan
+cmd.exe /c "systeminfo"
